@@ -6,8 +6,8 @@ public final class Minecraft_plugin extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        // Plugin startup logic
-
+        System.out.println("siema treecuter odpalony");
+        getServer().getPluginManager().registerEvents(new TreeCutterEvent(), this);
     }
 
     @Override
