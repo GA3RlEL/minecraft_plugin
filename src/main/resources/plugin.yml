@@ -1,4 +1,11 @@
-name: minecraft_plugin
+name: HealPlugin
 version: '1.0-SNAPSHOT'
-main: org.plugin.minecraft_plugin.Minecraft_plugin
+main: org.plugin.minecraft_plugin.Heal
 api-version: '1.21'
+commands:
+  heal:
+    description: Ulecz się do pełnego zdrowia
+    usage: /heal
+  randomeffect:
+    description: Losowy efekt
+    usage: /randomeffect
