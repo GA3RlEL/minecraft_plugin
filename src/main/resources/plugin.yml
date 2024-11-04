@@ -1,0 +1,4 @@
+name: minecraft_plugin
+version: '1.0-SNAPSHOT'
+main: org.plugin.minecraft_plugin.Minecraft_plugin
+api-version: '1.21'
