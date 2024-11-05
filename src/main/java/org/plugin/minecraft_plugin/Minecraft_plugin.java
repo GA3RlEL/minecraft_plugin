@@ -8,7 +8,8 @@ public final class Minecraft_plugin extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        // Plugin startup logic
+        this.getCommand("tpa").setExecutor(new TpaCommand());
+        this.getCommand("tpaaccept").setExecutor(new TpaAcceptCommand());
         getServer().getPluginManager().registerEvents(new VeinMiner(), this);
         getServer().getPluginManager().registerEvents(new TreeCutterEvent(), this);
         this.getCommand("heal").setExecutor(new Heal());

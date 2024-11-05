@@ -2,6 +2,12 @@ name: HealPlugin
 version: '1.0-SNAPSHOT'
 main: org.plugin.minecraft_plugin.Minecraft_plugin
 api-version: '1.21'
+
+commands:
+  tpa:
+    description: witam witam
+  tpaaccept:
+    description: witam witam 123
 main: org.plugin.minecraft_plugin.Heal
 api-version: '1.21'
 commands:
