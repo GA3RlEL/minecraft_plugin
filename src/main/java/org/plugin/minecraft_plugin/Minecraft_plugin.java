@@ -8,6 +8,8 @@ public final class Minecraft_plugin extends JavaPlugin {
 
     @Override
     public void onEnable() {
+        System.out.println("siema treecuter odpalony");
+        getServer().getPluginManager().registerEvents(new TreeCutterEvent(), this);
         this.getCommand("heal").setExecutor(new Heal());
         this.getCommand("sethome").setExecutor(new SetHome());
         this.getCommand("home").setExecutor(new Home());
