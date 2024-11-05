@@ -46,7 +46,7 @@ public final class SetHome implements CommandExecutor {
             }else
             {
                 try {
-                    System.out.println("Record:" + record);
+//                    System.out.println("Record:" + record);
                     FileReader fr = new FileReader(file);
                     reader = new BufferedReader(fr);
                     StringBuilder newRecord = new StringBuilder();
@@ -58,7 +58,7 @@ public final class SetHome implements CommandExecutor {
                     }else{
                         newRecord.append(line).append("\n").append(record);
                     }
-                    System.out.println("line:" + line);
+                    //System.out.println("line:" + line);
                     reader.close();
                     fr.close();
 
