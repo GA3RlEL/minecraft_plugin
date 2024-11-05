@@ -9,3 +9,7 @@ commands:
   randomeffect:
     description: Losowy efekt
     usage: /randomeffect
+  sethome:
+    description: Set location of your home
+  home:
+    description: Takes you to your home
