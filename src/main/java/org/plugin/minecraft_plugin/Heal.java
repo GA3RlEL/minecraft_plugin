@@ -11,7 +11,7 @@ import org.bukkit.potion.PotionEffectType;
 import java.util.Random;
 
 
-public final class Heal implements CommandExecutor {
+public class Heal implements CommandExecutor {
 
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {

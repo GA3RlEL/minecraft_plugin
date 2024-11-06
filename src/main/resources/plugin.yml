@@ -18,3 +18,5 @@ commands:
     description: Set location of your home
   home:
     description: Takes you to your home
+  enderchest:
+    description: Admin command to see someone's enderchest
