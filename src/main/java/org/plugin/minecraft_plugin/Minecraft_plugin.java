@@ -15,6 +15,7 @@ public final class Minecraft_plugin extends JavaPlugin {
         this.getCommand("heal").setExecutor(new Heal());
         this.getCommand("sethome").setExecutor(new SetHome());
         this.getCommand("home").setExecutor(new Home());
+        this.getCommand("enderchest").setExecutor(new AdminSeeEnderchest());
     }
 
     @Override
