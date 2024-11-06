@@ -7,10 +7,11 @@ import java.util.Objects;
 
 public final class Minecraft_plugin extends JavaPlugin {
 
-    PluginManager pluginManager = getServer().getPluginManager();
+    PluginManager pm = getServer().getPluginManager();
 
     @Override
     public void onEnable() {
+        //Commands
         this.getCommand("tpa").setExecutor(new TpaCommand());
         this.getCommand("tpaaccept").setExecutor(new TpaAcceptCommand());
         this.getCommand("heal").setExecutor(new Heal());
@@ -18,8 +19,13 @@ public final class Minecraft_plugin extends JavaPlugin {
         this.getCommand("home").setExecutor(new Home());
         this.getCommand("seeinventory").setExecutor(new AdminSeeInventoryCommand());
 
-        pluginManager.registerEvents(new VeinMiner(), this);
-        pluginManager.registerEvents(new TreeCutterEvent(), this);
+
+        this.getCommand("enderchest").setExecutor(new AdminSeeEnderchest());
+
+        //Events
+        pm.registerEvents(new Greeter(), this);
+        pm.registerEvents(new VeinMiner(), this);
+        pm.registerEvents(new TreeCutterEvent(), this);
     }
 
     @Override
