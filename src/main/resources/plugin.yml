@@ -8,9 +8,6 @@ commands:
     description: witam witam
   tpaaccept:
     description: witam witam 123
-main: org.plugin.minecraft_plugin.Heal
-api-version: '1.21'
-commands:
   heal:
     description: Ulecz się do pełnego zdrowia
     usage: /heal
@@ -21,3 +18,5 @@ commands:
     description: Set location of your home
   home:
     description: Takes you to your home
+  seeinventory:
+    description: Admin command to see someone's inventory
